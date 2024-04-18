@@ -1,0 +1,141 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace; /* Use JetBrains Mono font */
+}
+
+.container {
+  width: 60%; /* Adjusted width for the content area */
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color:  #2c2b2b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center; /* Center the content horizontally */
+  position: relative; /* Add this for positioning the mode toggle button */
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Section Styles */
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color:  #2c2b2b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.mode-toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  color: #fff; /* Default color for light mode */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dark-mode .mode-toggle-btn {
+  color: #fff; /* Color for light mode when in dark mode */
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #2c2b2b; /* Dark mode background color */
+}
+
+/* Light font color */
+.light-font {
+  color: #fff; /* White font color */
+}
+
+/* For smaller screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Project Styles */
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-info {
+  display: flex; /* Use flexbox to align image and description */
+  align-items: center; /* Vertically center the content */
+  margin-bottom: 20px; /* Add spacing between projects */
+}
+
+.project-info img {
+  max-width: 200px; /* Set max width for the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add spacing between image and description */
+}
+
+.description {
+  flex: 1; /* Allow the description to take remaining space */
+}
+
+.description p {
+  margin: 0; /* Remove default margin */
+}
+.about-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  max-width: 200px; /* Set max width for the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add spacing between image and description */
+  border-radius: 10px; /* Apply border radius to create a circular rectangle */
+}
+
+.description {
+  flex: 1; /* Allow the description to take remaining space */
+}
+
+.description p {
+  margin: 0; /* Remove default margin */
+}
